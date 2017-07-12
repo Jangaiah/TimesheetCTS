@@ -1,0 +1,38 @@
+<!Doctype html>
+<html ng-app="app">
+    <head>
+        <link rel="icon" href="images/icon.png" />
+        <title>Timesheet</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="libraries/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="head-title">PeopleSoft ESA</div>
+            <div class="menu-bar"></div>
+        </div>
+        <div class="clear"></div>        
+        <div id="loader">
+            <div class="img"></div>
+        </div>
+        <div ng-view>            
+        </div>
+    </body>
+    <script type="text/javascript" src="libraries/js/angular.min.js" ></script>
+    <!--<script type="text/javascript" src="libraries/js/ui-bootstrap-tpls-2.5.0.min.js" ></script>-->
+    <script type="text/javascript" src="libraries/js/angular-route.min.js" ></script>
+    <script type="text/javascript" src="libraries/js/angular-animate.min.js" ></script>
+    <script type="text/javascript" src="libraries/js/angular-touch.min.js" ></script>
+    <script type="text/javascript" src="app.js" ></script>
+    <script type="text/javascript" src="js/controllers/home-controller.js" ></script>
+    <script type="text/javascript" src="js/controllers/entry-controller.js" ></script>
+    <script type="text/javascript" src="js/controllers/summary-controller.js" ></script>
+    <script type="text/javascript" src="js/services/sorting-cards-service.js" ></script>
+    <script type="text/javascript" src="js/directives/week-card-directive.js" ></script>
+    <script type="text/javascript" src="js/controllers/week-card-controller.js" ></script>
+    <script type="text/javascript" src="js/services/date-service.js" ></script>
+    <script type="text/javascript" src="js/services/week-service.js" ></script>
+</html>
